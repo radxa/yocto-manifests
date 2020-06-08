@@ -8,9 +8,11 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/jwinarske" name="flutter"/>
 
   <default revision="zeus" sync-c="true" sync-j="8"/>
 
+  <project name="meta-flutter" remote="flutter"/>
   <project name="meta-browser" remote="browser"/>
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
