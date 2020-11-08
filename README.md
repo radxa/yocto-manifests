@@ -16,6 +16,11 @@ Yocto SDK for the Rockchip SOC boards
 5. Flash the generated "build/tmp/deploy/\<MACHINE\>/update.img" to your device
 6. Boot your device and enjoy it
 
+NOTE:
+Add zeus to LAYERSERIES_COMPAT_browser-layer in meta-browser/conf/layer.conf:
+-LAYERSERIES_COMPAT_browser-layer = "dunfell gatesgarth"
++LAYERSERIES_COMPAT_browser-layer = "zeus dunfell gatesgarth"
+
 ## Maintainers
 
 * Jeffy Chen `<jeffy.chen@rock-chips.com>`
