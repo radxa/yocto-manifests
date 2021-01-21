@@ -21,6 +21,10 @@ Add zeus to LAYERSERIES_COMPAT_browser-layer in meta-browser/conf/layer.conf:
 -LAYERSERIES_COMPAT_browser-layer = "dunfell gatesgarth"
 +LAYERSERIES_COMPAT_browser-layer = "zeus dunfell gatesgarth"
 
+Remove mime-xdg in meta-browser/recipes-browser/chromium/chromium.inc
+-inherit mime-xdg pythonnative setuptools
++inherit pythonnative setuptools
+
 ## Maintainers
 
 * Jeffy Chen `<jeffy.chen@rock-chips.com>`
