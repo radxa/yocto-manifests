@@ -14,7 +14,6 @@
   <project dest-branch="master" name="meta-browser" remote="browser" revision="a5a5f277740a8434377f9844c62574efb17a4fa0"/>
   <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8"/>
   <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="11eae114522a6befa06c7f4021a83bc016133543"/>
-  <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125"/>
   <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="ded5ee2dac6e36904989923f4903999f06a15b1a"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
