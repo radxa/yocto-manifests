@@ -7,6 +7,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/meta-rust" name="rust"/>
+  <remote fetch="https://github.com/sony/" name="flutter"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   
   <default revision="dunfell" sync-c="true" sync-j="8"/>
@@ -18,6 +19,7 @@
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125"/>
   <project dest-branch="dunfell" name="meta-rockchip" remote="github" revision="9a0f8202581f6bd607e99494ba2cf60fdd89cd03"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
+  <project dest-branch="main" name="meta-flutter" remote="flutter" revision="e5f69b53dbd987212e0333ab19ab47481a5c7ff4"/>
   <project dest-branch="dunfell" name="poky" remote="yocto" revision="6ebb33bdaccaeadff0c85aab27acf35723df00d8">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
@@ -25,5 +27,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="dunfell" name="yocto-conf" path="build/conf" remote="github" revision="c778f2b0dfdfb17464f287f17d6a29a689e08382"/>
+  <extend-project dest-branch="flutter-sony" name="yocto-conf" path="build/conf" remote="github" revision="e84cdae4366e287822f31cfd4d7227190a8c19bf"/>
 </manifest>
