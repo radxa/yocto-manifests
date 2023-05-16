@@ -3,7 +3,7 @@
   <notice>Your sources have been sync'd successfully.</notice>
   <remote fetch="https://github.com/OSSystems" name="browser"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/JeffyCN/" name="github"/>
+  <remote fetch="https://github.com/radxa/" name="github"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
@@ -14,7 +14,7 @@
   <project name="meta-clang" remote="clang"/>
   <project name="meta-openembedded" remote="oe"/>
   <project name="meta-qt5" remote="qt5"/>
-  <project name="meta-rockchip" remote="github"/>
+  <project name="meta-rockchip" remote="github" revision="kirkstone-radxa"/>
   <project name="poky" remote="yocto">
     <linkfile dest="scripts" src="scripts"/>
     <linkfile dest="bitbake" src="bitbake"/>
@@ -22,7 +22,7 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="github">
-    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-evb.conf"/>
+  <project name="yocto-conf" path="build/conf" remote="github" revision= "kirkstone-radxa">
+    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-rock-5b.conf"/>
   </project>
 </manifest>
