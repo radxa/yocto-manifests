@@ -16,6 +16,37 @@ Yocto SDK for the Rockchip SOC boards
 5. Flash the generated "build/tmp/deploy/\<MACHINE\>/update.img" to your device
 6. Boot your device and enjoy it
 
+## Example: Build ROCK 5B
+
+Get source code
+
+```
+mkdir ~/yocto-rockchip-sdk && cd ~/yocto-rockchip-sdk
+repo init -u https://github.com/radxa/yocto-manifests.git -b master
+repo sync
+```
+
+Build ROCK 5B Desktop image
+
+```
+cd ~/yocto-rockchip-sdk
+```
+
+Make sure that local.conf is linked to rockchip-rk3588-rock-5b.conf
+
+```
+ls -al build/conf/local.conf
+lrwxrwxrwx 1 stephen stephen 28 May 16 21:46 build/conf/local.conf -> rockchip-rk3588-rock-5b.conf
+```
+
+Start build
+
+```
+source ./oe-init-build-env
+bitbake core-image-minimal
+```
+
 ## Maintainers
 
 * Jeffy Chen `<jeffy.chen@rock-chips.com>`
+* Stephen Chen `<stephen@radxa.com>`
