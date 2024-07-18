@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>Your sources have been sync'd successfully.</notice>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="github" fetch="https://github.com/JeffyCN/"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="radxa" fetch="https://github.com/radxa/"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  
+  <default revision="master" sync-j="8" sync-c="true"/>
+  
+  <project name="meta-browser" remote="browser" revision="d3a5f63c385e1e621fa1fef975024f8622a535ea" dest-branch="master"/>
+  <project name="meta-clang" remote="clang" revision="e7dceb1c92caf7f21ef1d7b49c85328c30cffd90" dest-branch="master"/>
+  <project name="meta-openembedded" remote="oe" revision="5778e32eae201072c5dc37c9db67dc1848ffb9de" dest-branch="master"/>
+  <project name="meta-rockchip" remote="radxa" revision="91435301127b738f372372c71a07c2b766778a7e" dest-branch="master"/>
+  <project name="poky" remote="yocto" revision="7eebbdb6c45149e8bf7abbf6a9f0c8068f7668f7" dest-branch="master">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
+  </project>
+  <project name="yocto-conf" path="build/conf" remote="radxa" revision="7d8ffe5454bcae888d9b064258b65d88430bfb58" dest-branch="master">
+    <linkfile src="rockchip-rk3588-rock-5b.conf" dest="build/conf/local.conf"/>
+  </project>
+</manifest>
