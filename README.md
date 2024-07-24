@@ -16,34 +16,33 @@ Yocto SDK for the Rockchip SOC boards
 5. Flash the generated "build/tmp/deploy/\<MACHINE\>/update.img" to your device
 6. Boot your device and enjoy it
 
-## Example: Build ROCK 5B
+## Example: Build ROCK 5B Machine
 
 Get source code
 
 ```
-mkdir ~/yocto-rockchip-sdk && cd ~/yocto-rockchip-sdk
-repo init -u https://github.com/radxa/yocto-manifests.git -b master
-repo sync
+$ mkdir ~/yocto-rockchip-sdk && cd ~/yocto-rockchip-sdk
+$ repo init -u https://github.com/radxa/yocto-manifests.git -b master
+$ repo sync
 ```
 
-Build ROCK 5B Desktop image
+Link the local.conf to the target board configuration file.
+Here we aim to build ROCK 5B machine, so the local.conf is linked to rockchip-rk3588-rock-5b.conf.
+You should change the link when you build the other machine.
 
 ```
-cd ~/yocto-rockchip-sdk
-```
-
-Make sure that local.conf is linked to rockchip-rk3588-rock-5b.conf
-
-```
-ls -al build/conf/local.conf
-lrwxrwxrwx 1 stephen stephen 28 May 16 21:46 build/conf/local.conf -> rockchip-rk3588-rock-5b.conf
+$ cd ~/yocto-rockchip-sdk/build/conf
+$ ln -sf rockchip-rk3588-rock-5b.conf local.conf
+$ ls -al local.conf
+lrwxrwxrwx 1 radxa radxa 28 Jul 24 18:45 local.conf -> rockchip-rk3588-rock-5b.conf
 ```
 
 Start build
 
 ```
-source ./oe-init-build-env
-bitbake core-image-minimal
+$ cd ~/yocto-rockchip-sdk
+$ source ./oe-init-build-env
+$ bitbake core-image-minimal
 ```
 
 ## Maintainers
