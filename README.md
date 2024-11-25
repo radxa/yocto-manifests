@@ -18,6 +18,14 @@ Yocto SDK for the Rockchip SOC boards
 
 ## List of Radxa Boards supported
 
+### RK3528A
+
+* ROCK 2A
+* ROCK 2F
+* Radxa E20C
+
+### RK3588(S)
+
 * ROCK 5A
 * ROCK 5B
 * ROCK 5B+

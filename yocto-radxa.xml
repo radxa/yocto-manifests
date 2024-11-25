@@ -13,7 +13,7 @@
   <project name="meta-browser" remote="browser" revision="d3a5f63c385e1e621fa1fef975024f8622a535ea" dest-branch="master"/>
   <project name="meta-clang" remote="clang" revision="e7dceb1c92caf7f21ef1d7b49c85328c30cffd90" dest-branch="scarthgap"/>
   <project name="meta-openembedded" remote="oe" revision="a72010b414ee3d73888ac9cb4e310e8f05e13aea" dest-branch="scarthgap"/>
-  <project name="meta-rockchip" remote="radxa" revision="543eab5521ead6823f8bcbcfcb18e0bf37357a03" dest-branch="scarthgap-vendor"/>
+  <project name="meta-rockchip" remote="radxa" revision="8a996879163f9bf34035118e56c112388e974cab" dest-branch="scarthgap-vendor"/>
   <project name="poky" remote="yocto" revision="f450ddee3e1299dc80e1641c38bbd1699764ac87" dest-branch="scarthgap">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
@@ -21,7 +21,7 @@
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="radxa" revision="985324f1c16a694aaf24fa4cc7564f8718927a37" dest-branch="scarthgap">
+  <project name="yocto-conf" path="build/conf" remote="radxa" revision="8b7c96b3506dcd80565164d97cb104dfc46a44df" dest-branch="scarthgap">
     <linkfile src="rockchip-rk3588-rock-5b.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
