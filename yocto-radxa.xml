@@ -10,18 +10,19 @@
   
   <default revision="scarthgap" sync-j="8" sync-c="true"/>
   
-  <project name="meta-browser" remote="browser" revision="d3a5f63c385e1e621fa1fef975024f8622a535ea" dest-branch="master"/>
-  <project name="meta-clang" remote="clang" revision="e7dceb1c92caf7f21ef1d7b49c85328c30cffd90" dest-branch="scarthgap"/>
-  <project name="meta-openembedded" remote="oe" revision="a72010b414ee3d73888ac9cb4e310e8f05e13aea" dest-branch="scarthgap"/>
-  <project name="meta-rockchip" remote="radxa" revision="8a996879163f9bf34035118e56c112388e974cab" dest-branch="scarthgap-vendor"/>
-  <project name="poky" remote="yocto" revision="f450ddee3e1299dc80e1641c38bbd1699764ac87" dest-branch="scarthgap">
+  <project name="meta-browser" remote="browser" revision="2dabbb1bc1488f244bf66674fe7268a44dcc0d79" dest-branch="scarthgap"/>
+  <project name="meta-clang" remote="clang" revision="8c77b427408db01b8de4c04bd3d247c13c154f92" dest-branch="scarthgap"/>
+  <project name="meta-openembedded" remote="oe" revision="6c9f1f8d4538119803bf793747b65e4d23c33544" dest-branch="scarthgap"/>
+  <project name="meta-rockchip" remote="radxa" revision="c406519a1ee36e30ab1a3e5201ec4590a283daaa" dest-branch="scarthgap-vendor"/>
+  <project name="meta-lts-mixins" remote="yocto" revision="1793a1b8fc92cf8688c72b7fd4181e3a2f5ade55" dest-branch="scarthgap/rust"/>
+  <project name="poky" remote="yocto" revision="dc4827b3660bc1a03a2bc3b0672615b50e9137ff" dest-branch="scarthgap">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
     <linkfile src="meta-poky" dest="meta-poky"/>
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project name="yocto-conf" path="build/conf" remote="radxa" revision="8b7c96b3506dcd80565164d97cb104dfc46a44df" dest-branch="scarthgap">
+  <project name="yocto-conf" path="build/conf" remote="radxa" revision="7e191a778f2558ea879e4b3cfeeb98e5fdae52ef" dest-branch="scarthgap">
     <linkfile src="rockchip-rk3588-rock-5b.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
