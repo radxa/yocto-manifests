@@ -24,6 +24,10 @@ Yocto SDK for the Rockchip SOC boards
 * ROCK 2F
 * Radxa E20C
 
+### RK3576
+
+* ROCK 4D
+
 ### RK3588(S)
 
 * ROCK 5A
